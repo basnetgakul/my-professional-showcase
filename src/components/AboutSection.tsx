@@ -1,21 +1,21 @@
-import { Code2, Lightbulb, Users } from 'lucide-react';
+import { Shield, Target, BookOpen } from 'lucide-react';
 
 const AboutSection = () => {
   const highlights = [
     {
-      icon: Code2,
-      title: '5+ Years',
-      description: 'Professional Development',
+      icon: Shield,
+      title: 'Blue Team',
+      description: 'Defense & Monitoring',
     },
     {
-      icon: Users,
-      title: '50+ Projects',
-      description: 'Successfully Delivered',
+      icon: Target,
+      title: 'CEH v13',
+      description: 'Certified Ethical Hacker',
     },
     {
-      icon: Lightbulb,
-      title: 'Innovation',
-      description: 'Driven Approach',
+      icon: BookOpen,
+      title: 'SOC Ready',
+      description: 'Security Operations',
     },
   ];
 
@@ -29,25 +29,25 @@ const AboutSection = () => {
               About Me
             </p>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Passionate about building impactful solutions
+              Aspiring SOC Analyst & Security Professional
             </h2>
             <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
               <p>
-                I'm a full-stack developer with a passion for creating elegant, 
-                user-centric applications. With expertise in modern web technologies, 
-                I transform complex problems into intuitive digital experiences.
+                Passionate and analytical cybersecurity fresher with a strong academic 
+                background in computer science and cybersecurity. I possess hands-on 
+                exposure to network security, SOC fundamentals, ethical hacking concepts, 
+                and security monitoring tools.
               </p>
               <p>
-                My journey in software development began with a curiosity for how 
-                things work, which evolved into a career dedicated to crafting 
-                solutions that make a difference. I believe in writing clean, 
-                maintainable code and staying at the forefront of technological 
-                advancements.
+                Highly motivated to understand modern threat detection, incident response 
+                workflows, and Blue Team operations. I am eager to contribute to a 
+                cybersecurity team while continuously developing skills toward becoming 
+                a competent SOC Analyst and Security Professional.
               </p>
               <p>
-                When I'm not coding, you'll find me exploring new technologies, 
-                contributing to open-source projects, or sharing knowledge with 
-                the developer community.
+                Based in Nepal, I bring a research-oriented and security-focused mindset 
+                with strong problem-solving abilities and adaptability to new tools 
+                and technologies.
               </p>
             </div>
           </div>

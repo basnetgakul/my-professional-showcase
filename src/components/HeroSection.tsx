@@ -1,4 +1,4 @@
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Mail, Phone } from 'lucide-react';
 import { Button } from './ui/button';
 
 const HeroSection = () => {
@@ -14,7 +14,7 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Eyebrow */}
           <p className="text-primary font-medium tracking-widest uppercase text-sm mb-6 animate-fade-in opacity-0">
-            Full-Stack Developer
+            Certified Ethical Hacker v13 — Blue Team
           </p>
 
           {/* Name */}
@@ -25,8 +25,8 @@ const HeroSection = () => {
 
           {/* Tagline */}
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in-up opacity-0 animation-delay-200">
-            Crafting exceptional digital experiences through clean code, 
-            thoughtful design, and innovative solutions.
+            Passionate cybersecurity professional focused on threat detection, 
+            incident response, and Blue Team operations.
           </p>
 
           {/* CTA Buttons */}
@@ -34,11 +34,11 @@ const HeroSection = () => {
             <Button variant="hero" size="xl" asChild>
               <a href="#contact">
                 <Mail className="mr-2" size={20} />
-                Let's Connect
+                Get in Touch
               </a>
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
-              <a href="#experience">View My Work</a>
+              <a href="#experience">View My Projects</a>
             </Button>
           </div>
 
@@ -54,7 +54,7 @@ const HeroSection = () => {
               <Github size={22} />
             </a>
             <a
-              href="https://www.linkedin.com/in/gakul-basnet-333852322"
+              href="http://www.linkedin.com/in/gakul-basnet-333852322"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-secondary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
@@ -68,6 +68,13 @@ const HeroSection = () => {
               aria-label="Email"
             >
               <Mail size={22} />
+            </a>
+            <a
+              href="tel:+9779822251567"
+              className="p-3 rounded-full bg-secondary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
+              aria-label="Phone"
+            >
+              <Phone size={22} />
             </a>
           </div>
         </div>
