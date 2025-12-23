@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="section-container">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-muted-foreground text-sm">
           <p className="flex items-center gap-1">
-            © {currentYear} John Doe. Built with{' '}
+            © {currentYear} Gakul Basnet. Built with{' '}
             <Heart size={14} className="text-primary fill-primary" /> and code.
           </p>
           <nav className="flex items-center gap-6">

@@ -19,8 +19,8 @@ const HeroSection = () => {
 
           {/* Name */}
           <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in-up opacity-0 animation-delay-100">
-            <span className="text-foreground">John </span>
-            <span className="gradient-text">Doe</span>
+            <span className="text-foreground">Gakul </span>
+            <span className="gradient-text">Basnet</span>
           </h1>
 
           {/* Tagline */}
@@ -45,7 +45,7 @@ const HeroSection = () => {
           {/* Social Links */}
           <div className="flex items-center justify-center gap-6 animate-fade-in opacity-0 animation-delay-400">
             <a
-              href="https://github.com"
+              href="https://github.com/basnetgakul"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-secondary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
@@ -54,7 +54,7 @@ const HeroSection = () => {
               <Github size={22} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/gakul-basnet-333852322"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-secondary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
@@ -63,7 +63,7 @@ const HeroSection = () => {
               <Linkedin size={22} />
             </a>
             <a
-              href="mailto:john@example.com"
+              href="mailto:basnetgakul8@gmail.com"
               className="p-3 rounded-full bg-secondary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
               aria-label="Email"
             >
