@@ -3,9 +3,8 @@ import { Button } from './ui/button';
 
 const ContactSection = () => {
   const socialLinks = [
-    { icon: Github, label: 'GitHub', href: 'https://github.com', username: '@johndoe' },
-    { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com', username: '/in/johndoe' },
-    { icon: Twitter, label: 'Twitter', href: 'https://twitter.com', username: '@johndoe' },
+    { icon: Github, label: 'GitHub', href: 'https://github.com/basnetgakul', username: '@basnetgakul' },
+    { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/gakul-basnet-333852322', username: 'Gakul Basnet' },
   ];
 
   return (
@@ -37,10 +36,10 @@ const ContactSection = () => {
                 Email Me
               </h3>
               <a
-                href="mailto:john@example.com"
+                href="mailto:basnetgakul8@gmail.com"
                 className="text-primary hover:underline text-lg"
               >
-                john@example.com
+                basnetgakul8@gmail.com
               </a>
             </div>
 
@@ -82,7 +81,7 @@ const ContactSection = () => {
           {/* CTA */}
           <div className="text-center mt-12">
             <Button variant="hero" size="xl" asChild>
-              <a href="mailto:john@example.com" className="inline-flex items-center gap-3">
+              <a href="mailto:basnetgakul8@gmail.com" className="inline-flex items-center gap-3">
                 <Send size={20} />
                 Send Me a Message
               </a>
