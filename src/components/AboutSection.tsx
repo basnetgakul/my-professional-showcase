@@ -1,21 +1,21 @@
-import { Shield, Target, BookOpen } from 'lucide-react';
+import { MapPin, Users, Lightbulb, Zap } from 'lucide-react';
 
 const AboutSection = () => {
-  const highlights = [
+  const traits = [
     {
-      icon: Shield,
-      title: 'Blue Team',
-      description: 'Defense & Monitoring',
+      icon: Lightbulb,
+      title: 'Analytical Thinker',
+      description: 'Strong problem-solving abilities',
     },
     {
-      icon: Target,
-      title: 'CEH v13',
-      description: 'Certified Ethical Hacker',
+      icon: Users,
+      title: 'Team Player',
+      description: 'Great communication & collaboration',
     },
     {
-      icon: BookOpen,
-      title: 'SOC Ready',
-      description: 'Security Operations',
+      icon: Zap,
+      title: 'Quick Learner',
+      description: 'Adaptable to new technologies',
     },
   ];
 
@@ -44,17 +44,16 @@ const AboutSection = () => {
                 cybersecurity team while continuously developing skills toward becoming 
                 a competent SOC Analyst and Security Professional.
               </p>
-              <p>
-                Based in Nepal, I bring a research-oriented and security-focused mindset 
-                with strong problem-solving abilities and adaptability to new tools 
-                and technologies.
-              </p>
+              <div className="flex items-center gap-2 text-primary pt-2">
+                <MapPin size={18} />
+                <span className="font-medium">Based in Nepal</span>
+              </div>
             </div>
           </div>
 
-          {/* Highlights Grid */}
+          {/* Soft Skills / Traits */}
           <div className="grid gap-6">
-            {highlights.map((item, index) => (
+            {traits.map((item, index) => (
               <div
                 key={item.title}
                 className="glass-card p-6 flex items-center gap-6 hover:border-primary/50 transition-all duration-300 group"
@@ -64,7 +63,7 @@ const AboutSection = () => {
                   <item.icon size={28} />
                 </div>
                 <div>
-                  <h3 className="font-display text-2xl font-bold text-foreground">
+                  <h3 className="font-display text-xl font-bold text-foreground">
                     {item.title}
                   </h3>
                   <p className="text-muted-foreground">{item.description}</p>

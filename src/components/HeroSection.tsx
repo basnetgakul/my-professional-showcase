@@ -47,7 +47,7 @@ const HeroSection = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-fade-in-up opacity-0 animation-delay-300">
             <Button variant="hero" size="xl" asChild>
-              <a href="#contact">
+              <a href="mailto:basnetgakul8@gmail.com">
                 <Mail className="mr-2" size={20} />
                 Get in Touch
               </a>
