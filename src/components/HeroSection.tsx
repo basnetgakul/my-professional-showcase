@@ -1,5 +1,6 @@
 import { ArrowDown, Github, Linkedin, Mail, Phone } from 'lucide-react';
 import { Button } from './ui/button';
+import gakulPhoto from '@/assets/gakul-photo.jpg';
 
 const HeroSection = () => {
   return (
@@ -12,13 +13,27 @@ const HeroSection = () => {
 
       <div className="section-container relative z-10">
         <div className="max-w-4xl mx-auto text-center">
+          {/* Profile Photo */}
+          <div className="mb-8 animate-fade-in opacity-0">
+            <div className="relative inline-block">
+              <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl shadow-primary/20">
+                <img 
+                  src={gakulPhoto} 
+                  alt="Gakul Basnet" 
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 to-transparent pointer-events-none" />
+            </div>
+          </div>
+
           {/* Eyebrow */}
-          <p className="text-primary font-medium tracking-widest uppercase text-sm mb-6 animate-fade-in opacity-0">
+          <p className="text-primary font-medium tracking-widest uppercase text-sm mb-6 animate-fade-in opacity-0 animation-delay-100">
             Certified Ethical Hacker v13 — Blue Team
           </p>
 
           {/* Name */}
-          <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in-up opacity-0 animation-delay-100">
+          <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in-up opacity-0 animation-delay-200">
             <span className="text-foreground">Gakul </span>
             <span className="gradient-text">Basnet</span>
           </h1>
