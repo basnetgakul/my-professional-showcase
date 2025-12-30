@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['Orbitron', 'monospace'],
-        body: ['Fira Code', 'monospace'],
+        display: ['Space Grotesk', 'sans-serif'],
+        body: ['JetBrains Mono', 'monospace'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -53,7 +53,7 @@ export default {
         },
         cyber: {
           green: "hsl(var(--cyber-green))",
-          cyan: "hsl(var(--cyber-cyan))",
+          blue: "hsl(var(--cyber-blue))",
           purple: "hsl(var(--cyber-purple))",
         },
         sidebar: {
@@ -83,29 +83,13 @@ export default {
         },
         "float": {
           "0%, 100%": { transform: "translateY(0px)" },
-          "50%": { transform: "translateY(-10px)" },
-        },
-        "pulse-border": {
-          "0%, 100%": { borderColor: "hsl(var(--primary) / 0.3)" },
-          "50%": { borderColor: "hsl(var(--primary))" },
-        },
-        "scan": {
-          "0%": { transform: "translateY(-100%)" },
-          "100%": { transform: "translateY(100%)" },
+          "50%": { transform: "translateY(-8px)" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "float": "float 6s ease-in-out infinite",
-        "pulse-border": "pulse-border 2s ease-in-out infinite",
-        "scan": "scan 3s linear infinite",
-      },
-      backgroundImage: {
-        'cyber-grid': 'linear-gradient(hsl(var(--primary) / 0.1) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--primary) / 0.1) 1px, transparent 1px)',
-      },
-      backgroundSize: {
-        'grid': '50px 50px',
       },
     },
   },

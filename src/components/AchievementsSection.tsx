@@ -1,12 +1,11 @@
-import { Award, Languages } from 'lucide-react';
+import { Award, Languages, BookOpen, ExternalLink } from 'lucide-react';
 
 const AchievementsSection = () => {
   const certifications = [
     {
-      icon: Award,
       title: 'CEH v13 — Certified Ethical Hacker',
-      description: 'EC-Council certification demonstrating expertise in ethical hacking methodologies, tools, and techniques for identifying vulnerabilities and securing systems.',
       issuer: 'EC-Council',
+      description: 'Industry-recognized certification demonstrating expertise in ethical hacking methodologies and security assessment techniques.',
     },
   ];
 
@@ -16,47 +15,45 @@ const AchievementsSection = () => {
   ];
 
   return (
-    <section id="achievements" className="py-24 md:py-32 bg-secondary/30">
+    <section id="achievements" className="py-24 md:py-32 bg-secondary/20">
       <div className="section-container">
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="text-primary font-medium tracking-widest uppercase text-sm mb-4">
-            Certifications & Languages
-          </p>
+          <div className="section-label justify-center">Credentials</div>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Professional Credentials
+            Professional <span className="gradient-text">Certifications</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Industry-recognized certifications validating my cybersecurity expertise 
-            and commitment to professional development.
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Industry-recognized certifications validating cybersecurity expertise.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 gap-6">
           {/* Certifications */}
-          <div className="space-y-6">
-            <h3 className="font-display text-xl font-semibold text-foreground flex items-center gap-3">
-              <Award className="text-primary" size={24} />
-              Certifications
-            </h3>
-            {certifications.map((cert, index) => (
+          <div className="space-y-4">
+            <div className="flex items-center gap-2 mb-4">
+              <Award className="text-primary" size={20} />
+              <h3 className="font-display text-lg font-semibold text-foreground">
+                Certifications
+              </h3>
+            </div>
+            {certifications.map((cert) => (
               <div
                 key={cert.title}
-                className="glass-card p-8 hover:border-primary/50 transition-all duration-300 group"
-                style={{ animationDelay: `${index * 100}ms` }}
+                className="glass-card p-6 group"
               >
                 <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
-                    <cert.icon size={24} />
+                  <div className="p-2.5 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
+                    <Award size={20} />
                   </div>
                   <div className="flex-1">
-                    <h4 className="font-display text-lg font-semibold text-foreground mb-2">
+                    <h4 className="font-display font-semibold text-foreground mb-1">
                       {cert.title}
                     </h4>
-                    <p className="text-sm text-primary font-medium mb-3">
+                    <p className="text-xs text-primary font-medium mb-3">
                       {cert.issuer}
                     </p>
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-sm text-muted-foreground leading-relaxed">
                       {cert.description}
                     </p>
                   </div>
@@ -65,18 +62,20 @@ const AchievementsSection = () => {
             ))}
           </div>
 
-          {/* Languages */}
-          <div className="space-y-6">
-            <h3 className="font-display text-xl font-semibold text-foreground flex items-center gap-3">
-              <Languages className="text-primary" size={24} />
-              Languages
-            </h3>
-            <div className="glass-card p-8 hover:border-primary/50 transition-all duration-300">
-              <div className="space-y-6">
+          {/* Languages & Learning */}
+          <div className="space-y-4">
+            <div className="flex items-center gap-2 mb-4">
+              <Languages className="text-primary" size={20} />
+              <h3 className="font-display text-lg font-semibold text-foreground">
+                Languages
+              </h3>
+            </div>
+            <div className="glass-card p-6">
+              <div className="space-y-4">
                 {languages.map((lang) => (
                   <div key={lang.name} className="flex items-center justify-between">
-                    <span className="text-lg font-medium text-foreground">{lang.name}</span>
-                    <span className="px-4 py-2 rounded-lg bg-secondary text-muted-foreground text-sm">
+                    <span className="font-medium text-foreground">{lang.name}</span>
+                    <span className="px-3 py-1.5 rounded-md bg-secondary text-muted-foreground text-xs border border-border">
                       {lang.level}
                     </span>
                   </div>
@@ -84,16 +83,19 @@ const AchievementsSection = () => {
               </div>
             </div>
 
-            {/* Additional Info Card */}
-            <div className="glass-card p-8 hover:border-primary/50 transition-all duration-300 bg-primary/5">
-              <h4 className="font-display text-lg font-semibold text-foreground mb-4">
-                Continuous Learning
-              </h4>
-              <p className="text-muted-foreground leading-relaxed">
-                Actively pursuing additional certifications and hands-on training in 
-                SOC operations, threat intelligence, and advanced penetration testing 
-                to expand my cybersecurity expertise.
-              </p>
+            <div className="glass-card p-6 bg-primary/5 border-primary/20">
+              <div className="flex items-start gap-3">
+                <BookOpen size={18} className="text-primary mt-0.5" />
+                <div>
+                  <h4 className="font-display font-semibold text-foreground mb-2">
+                    Continuous Learning
+                  </h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Actively pursuing certifications in SOC operations, threat intelligence, 
+                    and advanced security testing.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
